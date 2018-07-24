@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.2.0" />
+    <meta charset="UTF-8" />
+    <title>表单框架</title>
+  </head>
+  <body>
+     <form action="图片标签.html" method="get">
+	 <fieldset>
+	 <legend >必填信息</legend>
+	 姓名：<input type = "text" value = "请输入姓名"  name = "name" readonly disabled></input><br>
+	 密码：<input type="password" value="12345" name="password" ></input><br>
+	 隐藏框：<input type="hidden" value="这是一个隐藏框"> </input><br>
+	 性别：<input type="radio" name="sex" checked>男</input><input type="radio" name="sex">女</input><br>
+	 </fieldset>
+	 
+	 <fieldset>
+	 <legend >选填信息</legend>
+	 国籍：<input type="radio" name="country" checked>中国</input><input type="radio" name="country" >美国</input><br>
+	 爱好：<input type="checkbox" name="hobby" checked>跑步</input>
+	 <input type="checkbox" name="hobby" >健身</input>
+	 <input type="checkbox" name="hobby" checked>游泳</input><br>
+	 <!--multiple标志可以多选-->
+	 学历：<select name="xueli1" multiple >
+	              <option >大学</option>
+				  <option >高中</option>
+				  <option >小学</option>
+	       </select><br>
+	 学历：<select name="xueli2"  >
+	              <option >大学</option>
+				  <option >高中</option>
+				  <option >小学</option>
+	       </select>	   
+     备注：<textarea cols="5" rows="10" name="beizhu">留点什么再走吧
+	       </textarea><br>
+	 </fieldset>
+	 <input type="reset">重置</input>
+	 <input type="submit">提交</submit>
+	 <input type="image" src="举个例子.jpg"></input>
+	 </form>
+	 <button onclick = "alert('大家好')">普通按钮</button>
+  </body>
+</html>
