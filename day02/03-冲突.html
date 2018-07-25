@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.2.0" />
+    <meta charset="UTF-8" />
+    <title>03-冲突</title>
+	<link rel="stylesheet" type="text/css" href="c.css"></link>
+	<link rel="stylesheet" type="text/css" href="b.css"></link>
+	<link rel="alternate stylesheet" type="text/css" href="d.css" title="测试"></link>
+	<style>
+		p{
+			color:green;
+		}
+		#one{
+			color:pink;
+			border:3px green dotted;
+		}
+		.two{
+			color:yellow;
+		}
+	</style>
+  </head>
+  <body>
+    <p style="color:red">行级样式表优先级高</p>
+	<!--id优先级高-->
+	<pre id="one" class="two">ID大于类</pre>
+	<div id="two">同样的外部样式显示按照就近原则</div>
+  </body>
+</html>

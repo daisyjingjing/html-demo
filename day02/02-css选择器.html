@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.2.0" />
+	<meta charset="UTF-8">
+    <title>02css选择器</title>
+  </head>
+  <style type="text/css">
+      /*标签选择器*/
+      p{
+	     font-family="宋体";
+		 font-weight="bold";
+	  }
+	  /*类名选择器*/
+	  .one{
+	     color:blue;
+	  }
+	  /*ID选择器*/
+	  #span{
+	     color:purple
+	  }
+	  /*组合选择器*/
+	  p,.one,#span{
+	     background-color:#0000ff;
+	  }
+	  /*关联选择器*/
+	  b i{
+		color:red;
+	  }
+	  /*静态伪类*/
+	  a:link{
+	    color:red;
+	  }
+	  a:visited{
+		color:purple;
+	  }
+	  input:focus{
+			border:1px solid red ;
+			color:green ;
+			background-color:#ffcc99;
+	  }
+
+	  table{
+		width:500px;
+		height:500px;
+		background-color:red;
+	  }
+	  table tr:hover{
+		background-color:green;
+	  }
+	  label:active{
+		color:yellow;
+	  }
+  </style>
+  <body>
+	<p>测试1</p>
+	<pre class="one">测试2</pre><br>
+	<span id="span">测试3</span>
+	<b>我是<i>中</i>国人</b>
+	<div>这一个测试块</div>
+	<a href="01-css与HTML结合.html" target="_blank"> 搜狐</a><br>
+	<input type="text"></input><br>
+	<table>
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+	</table>
+	<label>测试3</label>
+  </body>
+</html>
