@@ -5,11 +5,32 @@
 	<meta charset="UTF-8"/>
     <title>float属性</title>
 	<style type="text/css">
+		/*两个div都必须制定流向，两个都是left的话向右进行排列;两个都是right的话从开始从右向左进行流动*/
 		#one{
+			width:200px;
+			height:200px;
+			background-color:red;
+			float:right;
+		}
+		#two{
+			width:200px;
+			height:200px;
+			background-color:green;
+			float:right;
+		}
+		#three{
+			width:100px;
+			height:100px;
+			background-color:pink;
+			/*这里常用的就是auto*/
+			overflow:scroll;
 		}
 	</style>
   </head>
   <body>
-    <div></div>
+    <div id="one">测试数据</div>
+	<div id="two"></div>
+	<div id="three">抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子抖音小王子</div>
+	
   </body>
 </html>
